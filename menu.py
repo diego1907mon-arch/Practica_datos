@@ -42,3 +42,7 @@ def menu():
                     break
             else:
                 print("No existe una persona con esa cédula.")
+
+        elif opcion == "4":
+            print("Saliendo.")
+            break
