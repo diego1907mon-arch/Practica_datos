@@ -23,3 +23,11 @@ def menu():
             lista_personas.append(persona)
 
             print(" Persona registrada.")
+
+        elif opcion == "2":
+            if not lista_personas:
+                print("No hay personas registradas.")
+            else:
+                print("--- LISTADO DE PERSONAS ---")
+                for persona in lista_personas:
+                    persona.mostrarDatos()
