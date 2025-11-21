@@ -73,3 +73,27 @@ def menu():
                     break
             else:
                 print("No existe una persona con esa cédula.")
+
+                 # Eliminar persona por cédula
+        elif opcion == "5":
+            ced = input("Ingrese la cédula de la persona a eliminar: ")
+
+            for persona in lista_personas:
+                if persona.cedula == ced:
+                    lista_personas.remove(persona)
+                    print("Persona eliminada correctamente.")
+                    break
+            else:
+                print("No existe una persona con esa cédula.")
+
+        # Salir
+        elif opcion == "6":
+            print("Saliendo.")
+            break
+
+        else:
+            print("Opción no válida. Intente de nuevo.")
+
+
+menu()
+
