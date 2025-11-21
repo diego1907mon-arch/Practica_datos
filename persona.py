@@ -7,9 +7,19 @@ class Persona:
         self.cedula = cedula
 
     def mostrarDatos(self):
-        print("--- DATOS DE LA PERSONA ---")
+        print("\n--- DATOS DE LA PERSONA ---")
         print("Nombre:", self.nombre)
         print("Apellido:", self.apellido)
         print("Edad:", self.edad)
         print("Correo:", self.correo)
         print("Cédula:", self.cedula)
+
+    def actualizarDatos(self, nombre=None, apellido=None, edad=None, correo=None):
+        if nombre:
+            self.nombre = nombre
+        if apellido:
+            self.apellido = apellido
+        if edad:
+            self.edad = edad
+        if correo:
+            self.correo = correo
