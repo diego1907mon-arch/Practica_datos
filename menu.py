@@ -11,3 +11,15 @@ def menu():
         print("4. Salir")
 
         opcion = input("Seleccione una opción: ")
+
+        if opcion == "1":
+            nombre = input("Nombre: ")
+            apellido = input("Apellido: ")
+            edad = input("Edad: ")
+            correo = input("Correo: ")
+            cedula = input("Cédula: ")
+
+            persona = Persona(nombre, apellido, edad, correo, cedula)
+            lista_personas.append(persona)
+
+            print(" Persona registrada.")
