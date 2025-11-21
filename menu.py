@@ -4,7 +4,7 @@ lista_personas = []
 
 def menu():
     while True:
-        print("===== MENÚ PERSONAS =====")
+        print("---- MENÚ PERSONAS ----")
         print("1. Registrar persona")
         print("2. Mostrar todas las personas")
         print("3. Consultar persona por cédula")
@@ -22,7 +22,7 @@ def menu():
             persona = Persona(nombre, apellido, edad, correo, cedula)
             lista_personas.append(persona)
 
-            print(" Persona registrada.")
+            print("Persona registrada.")
 
         elif opcion == "2":
             if not lista_personas:
@@ -37,7 +37,7 @@ def menu():
 
             for persona in lista_personas:
                 if persona.cedula == ced:
-                    print("\n✔ Persona encontrada:")
+                    print("Persona encontrada:")
                     persona.mostrarDatos()
                     break
             else:
@@ -46,3 +46,5 @@ def menu():
         elif opcion == "4":
             print("Saliendo.")
             break
+
+menu()
