@@ -31,3 +31,14 @@ def menu():
                 print("--- LISTADO DE PERSONAS ---")
                 for persona in lista_personas:
                     persona.mostrarDatos()
+
+        elif opcion == "3":
+            ced = input("Ingrese la cédula a buscar: ")
+
+            for persona in lista_personas:
+                if persona.cedula == ced:
+                    print("\n✔ Persona encontrada:")
+                    persona.mostrarDatos()
+                    break
+            else:
+                print("No existe una persona con esa cédula.")
